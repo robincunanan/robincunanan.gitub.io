@@ -8,6 +8,13 @@
         <!-- DO NOT MODIFY UNLESS TO REPLACE A USER IDENTIFIER -->
         <!-- End Reddit Pixel -->
     
+        <script>
+            rdt('track', 'SignUp', {
+                "currency": "USD",
+                "transactionId": "12345678",
+                "value": 100
+            });
+          </script>    
    </head>
    <body>
       <!-- Wrapper -->
@@ -38,9 +45,9 @@
          <!-- Footer -->
       </div>
       <!-- Scripts -->
-      <form name="leads" id="signup_rd" method="get" action="">
+      <form name="leads" id="signup" method="get" action="">
          Email: <input type="email" name="email" id="email" value="donald-duck.com">
-         Optin: 
+         Signup: 
          <select name="cardtype" id="optout_value">
             <option value="1"> In</option>
             <option value="0">Out</option>
